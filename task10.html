@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<style>
+	input[name="inputName"] {
+	border: 1px solid black
+	}
+	.error{
+	border:1px solid red
+	}
+</style>
+<head>
+	<script type="text/javascript" src="task10.js"></script>
+</head>
+<body>
+	<form action="#" id="form" onsubmit="return formValidation();">
+		<p><input type="text" class="inputField" placeholder="First name" id="firstname" name="inputName"/></p>
+		<p><input type="text" class="inputField" placeholder="last name" id="lastname" name="inputName"/></p>
+		<p><input type="text" class="inputField" placeholder="E-mail" id="email" name="inputName"/></p>
+		<p><input type="text" class="inputField" placeholder="Phone" id="phone" name="inputName"/></p>
+		<select id="country" name="inputName" onChange = "countryOption(this);">
+			<option value="Blank"></option>
+			<option value="Bulgaria">Bulgaria</option>
+			<option value="Germany">Germany</option>
+			<option value="Italy">Italy</option>
+			<option value="Other">Other</option>
+		</select>
+		<div id="hidden-div" style="display:none;">
+			<input type="text" id="otheInput" placeholder="Enter country"/>
+		</div>
+		<p><input type="submit" name="submit" value="Submit"></p>
+	</form>
+</body>
+</html>
